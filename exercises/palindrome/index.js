@@ -9,9 +9,7 @@
 
 // not ideal solution but solved with every helper method
 function palindrome(str) {
-  return str.split('').every((char, i) => {
-    return char === str[str.length - i -1];
-  });
+  return str.split('').every((char, i) => char === str[str.length - i -1]);
 }
 
 module.exports = palindrome;
